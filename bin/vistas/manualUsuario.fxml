@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="475.0" prefWidth="813.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controlador.ControladorManualUsuario">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="12.0" prefHeight="475.0" prefWidth="813.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Label alignment="CENTER" prefHeight="62.0" prefWidth="379.0" text="Manual De Usuario" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <font>
+                  <Font name="Berlin Sans FB Demi Bold" size="36.0" />
+               </font>
+            </Label>
+         </top>
+         <center>
+            <TableView fx:id="tablaManualUsuario" prefHeight="386.0" prefWidth="589.0" BorderPane.alignment="CENTER" />
+         </center>
+         <right>
+            <Accordion BorderPane.alignment="CENTER" />
+         </right>
+         <left>
+            <TextArea prefHeight="200.0" prefWidth="200.0" text="&#10;&#10;1. Ingrese las premisas del&#10;   argumento, debe de tener &#10;   encuenta que debe de ingresar&#10;   minimo 2 premisas.&#10;&#10;2. Ingrese la conclusion &#10;&#10;3. Presione el boton de validez&#10;   el cual esta explicado en la &#10;   tabla de la derecha&#10;&#10;4. Se le mostrara las tablas de  la &#10;    verdad de ls premisas y se le&#10;    confirmara en el panel inferior &#10;    derecho si el argumento es &#10;    valido o no." BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font></TextArea>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>
